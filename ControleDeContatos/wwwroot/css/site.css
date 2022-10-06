@@ -1,0 +1,42 @@
+/*@import "~dataTables.net-bs4/css/dataTables.bootstrap4";*/
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: Verdana;  
+}
+
+.field-validation-error{
+    color: red;
+                       }
+
+close-alert {
+    position:absolute;
+    right: -10px;
+    top:-15px;
+    border-radius:15px;
+    width:30px;
+    height:31px;
+}
+
+
+
+
+
+
+
+
