@@ -20,7 +20,7 @@ a[b-k71fq6ar27] {
 
 .nav-pills .nav-link.active[b-k71fq6ar27], .nav-pills .show > .nav-link[b-k71fq6ar27] {
   color: #fff;
-  background-color: #1b6ec2;
+  background-color: #000099;
   border-color: #1861ac;
 }
 
@@ -40,13 +40,12 @@ button.accept-policy[b-k71fq6ar27] {
   line-height: inherit;
 }
 
-.footer[b-k71fq6ar27] {
-  position: absolute;
-  bottom: 0;
+.footer[b-k71fq6ar27] { 
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
 }
+
 /* _content/ControleDeContatos/Views/Shared/_LayoutDeslogado.cshtml.rz.scp.css */
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
@@ -68,8 +67,7 @@ a[b-u23mm2iwzu] {
 }
 
 .nav-pills .nav-link.active[b-u23mm2iwzu], .nav-pills .show > .nav-link[b-u23mm2iwzu] {
-  color: #fff;
-  background-color: #1b6ec2;
+  
   border-color: #1861ac;
 }
 

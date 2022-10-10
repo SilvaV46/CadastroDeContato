@@ -19,7 +19,7 @@ a {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #1b6ec2;
+  background-color: #000099;
   border-color: #1861ac;
 }
 
@@ -39,10 +39,9 @@ button.accept-policy {
   line-height: inherit;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
+.footer { 
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
 }
+

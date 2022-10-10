@@ -3,10 +3,10 @@
     ViewData["Title"] = "Listagem de Usuários";
 }
 
-<div class="text-center">
+<div class="text-center" >
 
     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <a class="btn btn-primary" asp-controller="Usuario" asp-action="Criar" role="button">Adicionar novo usuário</a>
+        <a id="btnadd" class="btn" asp-controller="Usuario" asp-action="Criar" role="button">Adicionar novo usuário</a>
     </div>
 
     <br />
@@ -30,11 +30,11 @@
     <br />
 
     <h1 class="display-4">Listagem de usuários</h1>
-
-    <table id="table-usuarios" class="display" style="width:100%">
+    
+    <table id="table-usuarios" class="display" style="width:100%;">
         <thead>
             <tr>
-                <th scope="col">#</th>
+                <th scope="col">ID</th>
                 <th scope="col">Nome</th>
                 <th scope="col">Login</th>
                 <th scope="col">Email</th>
@@ -56,15 +56,15 @@
                         <td>@usuario.Email</td>
                         <td>@(usuario.Perfil == ControleDeContatos.Enums.PerfilEnum.Admin ? "Administrador" : "Padrão")</td>
                         <td>
-                            <a href="javascript:" usuario-id="@usuario.Id" data-bs-toggle="modal" data-bs-target="#modalContatosUsuario" class="btn btn-success btn-sm btn-total-contatos">
+                            <a href="javascript:" usuario-id="@usuario.Id" data-bs-toggle="modal" data-bs-target="#modalContatosUsuario" class="btn btn-secondary btn-sm btn-total-contatos">
                                 @(usuario.Contatos != null && usuario.Contatos.Any() ? usuario.Contatos.Count() : 0)
                             </a>
                         </td>
                         <td>@usuario.DataDeCadastro</td>
                         <td>
                             <div class="btn-group" role="group">
-                                <a role="button" asp-action="Editar" asp-controller="Usuario" asp-route-id="@usuario.Id" class="btn btn-primary">Editar</a>
-                                <a role="button" asp-action="ApagarConfirmacao" asp-controller="Usuario" asp-route-id="@usuario.Id" class="btn btn-danger">Apagar</a>
+                                <a role="button" asp-action="Editar" asp-controller="Usuario" asp-route-id="@usuario.Id" class="btn btn-secondary">Editar</a>
+                                <a role="button" asp-action="ApagarConfirmacao" asp-controller="Usuario" asp-route-id="@usuario.Id" class="btn" style="background:#000099;color:#fff;">Apagar</a>
                             </div>
                         </td>
                     </tr>
@@ -76,7 +76,7 @@
             }
         </tbody>
     </table>
-
+    
 
     <div id="modalContatosUsuario" class="modal" tabindex="-1">
         <div class="modal-dialog modal-lg">

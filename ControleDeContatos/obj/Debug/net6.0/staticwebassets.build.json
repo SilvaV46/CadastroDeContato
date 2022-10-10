@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LpGEgySfYa/ffrYGRg1HGLJ6myjGU9tgepdYvTzJxr8=",
+  "Hash": "V1z7vOfWmqYId7bP/slbgq9/SLI8uZYQeFcumsWHneI=",
   "Source": "ControleDeContatos",
   "BasePath": "_content/ControleDeContatos",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\Administrator\\source\\repos\\ControleDeContatos\\ControleDeContatos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ControleDeContatos.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\css\\datatables.min.css",
+      "SourceId": "ControleDeContatos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
+      "BasePath": "_content/ControleDeContatos",
+      "RelativePath": "css/datatables.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\datatables.min.css"
+    },
+    {
       "Identity": "C:\\Users\\Administrator\\source\\repos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\css\\site.css",
       "SourceId": "ControleDeContatos",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\js\\datatables.min.js",
+      "SourceId": "ControleDeContatos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
+      "BasePath": "_content/ControleDeContatos",
+      "RelativePath": "js/datatables.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\datatables.min.js"
     },
     {
       "Identity": "C:\\Users\\Administrator\\source\\repos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\js\\site.js",
