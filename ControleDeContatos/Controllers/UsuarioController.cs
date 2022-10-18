@@ -1,9 +1,8 @@
 ﻿using ControleDeContatos.Filters;
 using ControleDeContatos.Models;
 using ControleDeContatos.Repositorio;
+using FastReport.Export.PdfSimple;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
 
 namespace ControleDeContatos.Controllers
 {
@@ -13,11 +12,16 @@ namespace ControleDeContatos.Controllers
         private readonly IUsuarioRepositorio _usuarioRepositorio;
         private readonly IContatoRepositorio _contatoRepositorio;
 
+        public readonly IWebHostEnvironment _webHostEnvironment;
+       
+
         public UsuarioController(IUsuarioRepositorio usuarioRepositorio,
-                                 IContatoRepositorio contatoRepositorio)
+                                 IContatoRepositorio contatoRepositorio,
+                                 IWebHostEnvironment webHostEnvironment)
         {
             _usuarioRepositorio = usuarioRepositorio;
             _contatoRepositorio = contatoRepositorio;
+            _webHostEnvironment = webHostEnvironment;     
         }
 
         public IActionResult Index()
@@ -119,5 +123,9 @@ namespace ControleDeContatos.Controllers
                 return RedirectToAction("Index");
             }
         }
+
+        public ActionResult AbrirRelatorio() => 
+            Redirect("http://winsrv2016:8080/ReportServer/Pages/ReportViewer.aspx?%2fReportASPNET%2fContatosPorUsuario&rs:Command=Render");
+
     }
 }
